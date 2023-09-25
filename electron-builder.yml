@@ -1,0 +1,22 @@
+appId: com.jimmy.my-electron-app # Replace with your app's unique identifier
+productName: My Electron App
+electronDist: ./dist
+directories:
+  output: ./release # Output directory for the packaged app
+mac:
+  target: dmg # Build a DMG installer for macOS
+  category: your-category # Customize the app category (optional)
+  icon: build/icon.icns # Path to your app's icon (replace with your icon file)
+dmg:
+  background: build/background.png # Background image for the DMG installer (replace with your image file)
+  icon: build/icon.icns # Icon for the DMG installer (replace with your icon file)
+# files:
+#   - dist/**/* # Include files from the "dist" directory in the packaged app
+#   - node_modules/**/* # Include node_modules
+# extraResources:
+#   - from: assets # Path to additional assets (e.g., data files)
+#     to: assets # Destination folder in the app package
+# publish:
+#   provider: github # Replace with your preferred publishing provider
+#   owner: yourusername # Your GitHub username or organization
+#   repo: my-electron-app # Your GitHub repository name
